@@ -1,0 +1,114 @@
+body{
+    background-image: url("../img/background.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden;
+}
+.usuario{
+    width: 400px;
+    margin: auto;
+    padding: 5%;
+}
+.form{
+    
+    position: relative;
+    z-index: 1;
+    background: #1e1e3f9f ;
+    backdrop-filter: blur(2px);
+    max-width: 320px;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+    box-shadow:10px 20px 30px black;
+    border-radius: 5%;
+    border: solid 5px #00FFFF ;
+}
+.form input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0;
+    width: 80%;
+    margin: 15px 5px 15px;
+    padding: 10px;
+    font-size: 16px;
+    outline: 0;
+    background: transparent;
+    color: #00FFFF;
+    
+}
+input::placeholder{
+    color:#00FFFF;
+    opacity: 0.7;
+    /* Opcional: deixa o placeholder um pouco mais transparente */
+}
+input:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    border-bottom: 2px solid #00FFFF;
+    /* Muda a cor da borda inferior quando focado */
+}
+
+.dentrodoform{
+    border-radius: 5%;
+    border-top: solid 5px #00FFFF ;
+    border-bottom: solid 5px #00FFFF ;
+    padding: 10px;
+}
+.form button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#00FFFF;
+    background: #1e1e3f9f;
+    border: 0;
+    width: 50%;
+    padding: 15px;
+    cursor: pointer;
+    border: solid 1px #00FFFF ;
+    font-size: 16px;
+    margin-bottom: 15px;
+    
+}
+.imagem1{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    box-shadow:5px 10px 30px #0D0D2B;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c4; /* Fundo preto semitransparente */
+    z-index: 5; /* Fica atrás da telinha */
+    
+}
+.echo {
+    background: #f27d009f ;
+    border: solid 5px #FF0000 ;
+    color: #FF0000 ;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 50% / 80%; /* Deixa o formato oval e achatado */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto seja centralizado */
+}
+
+.echo p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    white-space: pre-line; /* Mantém as quebras de linha */
+    line-height: 1.6;
+}
